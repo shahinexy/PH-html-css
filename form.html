@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        section{
+            width: 500px;
+            margin: 10px auto;
+            padding: 20px;
+            background-color: aquamarine;
+        }
+        label{
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <section>
+            <h2>Fill up this form</h2>
+            <form>
+                <label for="name">
+                    Your Name:
+                    <input type="text" name="" id="name" placeholder="Inter your name">
+                </label>
+                <label for="email">
+                    Your Email:
+                    <input type="email" name="" id="email" placeholder="Inter your email">
+                </label>
+                <label for="number">
+                    Your Number:
+                    <input type="number" name="" id="number" placeholder="Inter your number">
+                </label>
+
+                <!-- fieldset something new  -->
+                <fieldset>
+                    <legend>Pic Your device</legend>
+
+                    <!-- If you don't set the name attribute in the radio input field you can select all of the option and if you set name attribute you can setect only one opotion  -->
+                    <label for="computer">
+                        <input type="radio" name="device" id="computer">
+                        Computer
+                    </label>
+                    <label for="laptop">
+                        <input type="radio" name="device" id="laptop">
+                        laptop
+                    </label>
+                    <label for="mobile">
+                        <input type="radio" name="device" id="mobile">
+                        Mobile Phone
+                    </label>
+                </fieldset>
+
+                <!-- checkbox  -->
+                <fieldset>
+                    <legend>Pic your sim card</legend>
+                    <label for="airtel">
+                        <input type="checkbox" name="sim" id="airtel">
+                        Airtel
+                    </label>
+                    <label for="robi">
+                        <input type="checkbox" name="sim" id="robi">
+                        Robi
+                    </label>
+                    <label for="gramin">
+                        <input type="checkbox" name="sim" id="gramin">
+                        Gramin
+                    </label>
+                </fieldset>
+
+                <!-- text area  -->
+                <fieldset>
+                    <legend>Text area</legend>
+                    <label for="text">
+                        <textarea name="text" id="text" cols="50" rows="5"></textarea>
+                    </label>
+                </fieldset>
+
+                <!-- buttons  -->
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,22 @@
+nav{
+    padding: 5px;
+    background-image: linear-gradient(45deg,rgb(218, 35, 243),pink, rgb(112, 20, 170));
+}
+nav > ul{
+    display: flex;
+    justify-content: center;
+}
+nav li{
+    list-style: none;
+    margin-right: 20px;
+    font-size: 20px;
+    padding: 3px;
+}
+nav li:hover{
+    background-color: rgba(173, 44, 199, 0.656);
+    padding: 3px;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+}

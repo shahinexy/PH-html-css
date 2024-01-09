@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseeudo class & element</title>
+    <style>
+        /* ============== pseudo class ============= */
+        /* most popular is :hover  */
+        input:focus{
+            /* outline: none; */
+            outline-color: blueviolet;
+        }
+        input{
+            padding: 10px;
+        }
+        a:visited{
+            color: tomato;
+        }
+        
+        /* li:first-child{
+            color: palevioletred;
+        }
+        li:last-child{
+            color: purple;
+        } */
+        li:nth-child(2n){
+            background-color: aquamarine;
+        }
+        li:nth-child(2n+1){
+            background-color: goldenrod;
+        }
+
+        /* ========== pseudo element ========== */
+        /* most popular is ::befor ::after  */
+        p::first-letter{
+            font-size: 30px;
+        }
+        p::first-line{
+            background-color: gray;
+            color: blueviolet;
+        }
+        ::selection{
+            background-color: tomato;
+            color: white;
+        }
+        input::placeholder{
+            color: rgb(25, 161, 41);
+        }
+    </style>
+</head>
+<body>
+    <!-- pseudo class, (:) all item is pseudo class  -->
+    <input type="text" placeholder="using pseudo class">
+    <br>
+    <a href="https://www.google.com">Google</a> <br>
+    <a href="https://www.facebook.com/">facebook</a> 
+
+    <ul>
+        <li>Aliya</li>
+        <li>Daliya</li>
+        <li>Baliya</li>
+        <li>Kliya</li>
+        <li>Palaiya</li>
+        <li>Jalaiya</li>
+    </ul>
+
+    <!-- pseudo element  -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum cum nam delectus deserunt temporibus expedita, fugit iure dolor quisquam excepturi.</p>
+    <p>Culpa ad tempora nam veritatis molestias corporis cum eveniet quos iure, hic neque repellat ipsum consequatur laudantium minima accusamus eum.</p>
+    <p>Hic harum illum assumenda, ut animi consequuntur repellat similique dolor repellendus tenetur saepe quos officiis, ea dolores consequatur alias nihil!</p>
+</body>
+</html>

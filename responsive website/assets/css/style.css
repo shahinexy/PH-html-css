@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* ======== Default style ========= */
 *{
     margin: 0;
     padding: 0;
@@ -7,4 +8,17 @@
 }
 body{
     font-family: "Work Sans", sans-serif;
+}
+
+/* ============= Header area style ============= */
+header{
+    background: rgba(255, 144, 14, 0.10);
+}
+.hero_area{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
 }

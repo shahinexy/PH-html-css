@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                 /* ========== grid layout ========= */
+                 .header, .nav, .main, .sidebar, .advertise, .footer_layout{
+            background-color: purple;
+            border: 5px solid blueviolet;
+            margin: 50px 20px;
+            padding: 30px;
+         }
+         .header{
+            grid-area: header;
+         }
+         .nav{
+            grid-area: nav;
+         }
+         .amin{
+            grid-area: main;
+         }
+         .sidebar{
+            grid-area: header;
+         }
+         .advertise{
+            grid-area: adevertise;
+         }
+         .footer_layout{
+            grid-area: footer;
+         }
+         .grid_container{
+            /* display: grid; */
+            /* grid-template-areas: 
+            "header header header header"
+            "nav main main sidebar"
+            ; */
+         }
+
+    </style>
+</head>
+<body class="grid_container">
+    <header class="header">
+        This is a header
+    </header>
+    <nav class="nav">
+        <ul><li>Home</li>
+        <li>About</li>
+        <li>Contact Us</li></ul>
+    </nav>
+    <div class="sidebar">
+        Side bar
+    </div>
+    <div class="advertise">
+        Advertise
+    </div>
+    <main class="main"> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores numquam deserunt amet nesciunt. Praesentium quis consectetur laborum, quasi autem sint maxime enim voluptatibus, magni officia cumque aliquid velit, temporibus earum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores numquam deserunt amet nesciunt. Praesentium quis consectetur laborum, quasi autem sint maxime enim voluptatibus, magni officia cumque aliquid velit, temporibus earum.</p>
+    </main>
+    <footer class="footer_layout">
+        This is a footer
+    </footer>
+</body>
+</html>

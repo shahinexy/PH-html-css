@@ -119,12 +119,10 @@ ul li a {
     align-items: center;
     margin: 130px 0;
 }
-.experience_text_area{
+.experience_text_area, .experience_img{
     width: 50%;
 }
-.experience_img{
-    width: 50%;
-}
+
 .experience_img img{
     padding-left: 90px;
 }

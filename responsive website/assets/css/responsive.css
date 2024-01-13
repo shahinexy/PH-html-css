@@ -1,0 +1,54 @@
+/* Responsive style for Mobile 576px  */
+@media screen and (max-width: 576px) {
+    .hero_area {
+        padding: 0 10px;
+      }
+      main{
+        padding: 0 10px ;
+      }
+      nav,
+      .feature_container
+      {
+        flex-direction: column;
+      }
+      /* hero area  */
+      .hero_text{
+        padding-top: 20px;
+      }
+      /* feature area  */
+      .feature_container{
+        padding: 0;
+      }
+      .feature_images{
+        width: 100%;
+      }
+      .feature_text_area{
+        width: 100%;
+      }
+
+}
+
+/* Responsive style for Tablet 768px  */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .hero_area {
+        padding: 0 10px;
+      }
+      main{
+        padding: 0 10px ;
+      }
+      nav,
+      .feature_container
+      {
+        flex-direction: column;
+      }
+      .hero_text{
+        padding-top: 30px;
+      }
+      .feature_images{
+        width: 100%;
+      }
+      .feature_text_area{
+        width: 100%;
+      }
+}
+

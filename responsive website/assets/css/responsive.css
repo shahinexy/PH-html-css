@@ -40,6 +40,10 @@
         width: 100%;
         bottom: 0;
     }
+     /* card area  */
+     .card{
+      margin-bottom: 20px;
+     }
 
 }
 
@@ -60,6 +64,7 @@
       .hero_text{
         padding-top: 30px;
       }
+      /* feature area  */
       .feature_images{
         width: 100%;
       }

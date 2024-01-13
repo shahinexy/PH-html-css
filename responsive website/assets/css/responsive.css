@@ -44,7 +44,12 @@
      .card{
       margin-bottom: 20px;
      }
-
+     .cards_conatiner{
+      grid-template-columns: 1fr;
+     }
+     .sponsore_img{
+      grid-template-columns: 1fr;
+     }
 }
 
 /* Responsive style for Tablet 768px  */
@@ -75,5 +80,11 @@
       .experience_text_area, .experience_img{
         width: 100%;
     }
+    .cards_conatiner{
+      grid-template-columns: repeat(2, 1fr);
+     }
+     .sponsore_img{
+      grid-template-columns: repeat(2, 1fr);
+     }
 }
 

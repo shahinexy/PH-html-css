@@ -7,7 +7,7 @@
     <style>
         .container{
             max-width: 1000px;
-            margin: 0 auto;
+            margin: 30px auto;
             background-color: rgb(43, 122, 226);
             display: flex;
             justify-content: center;
@@ -20,7 +20,39 @@
             transition: all 1s 0.3s;
         }
         .container:hover .box{
-            transform: translate(100px , -80px) scale(0.7) rotate(360deg);
+            transform: translate(200px , -130px) scale(0.6) rotate(360deg);
+        }
+        .container_2{
+            max-width: 1000px;
+            margin: 50px auto;
+            background-color: rgb(166, 149, 38);
+            display: flex;
+            justify-content: center;
+        }
+        .box_area{
+            width: 600px;
+            height: 200px;
+            background-color: rgba(165, 42, 42, 0.693);
+            margin: 50px 0;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        @keyframes ping_pong_ball{
+            from{
+                left: 0px;
+            }
+            to{
+                left: 500px;
+            }
+        }
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            border-radius: 50%;
+            position: absolute;
+            animation: ping_pong_ball 1s ease-in-out 0.3s 4 alternate;
         }
     </style>
 </head>
@@ -28,6 +60,11 @@
     <div class="container">
         <div class="box">
 
+        </div>
+    </div>
+    <div class="container_2">
+        <div class="box_area">
+            <div class="ball"></div>
         </div>
     </div>
 </body>

@@ -1,90 +1,125 @@
 /* Responsive style for Mobile 576px  */
 @media screen and (max-width: 576px) {
-    .hero_area {
-        padding: 0 10px;
-      }
-      main{
-        padding: 0 10px ;
-      }
-      nav,
-      .feature_container,
-      .experience_container
-      {
-        flex-direction: column;
-      }
-      /* hero area  */
-      .hero_text{
-        padding-top: 20px;
-      }
-      /* feature area  */
-      .feature_images {
-        grid-template-columns:1fr;
-      }
-      .feature_container{
-        padding: 0;
-      }
-      .feature_images{
-        width: 100%;
-      }
-      .feature_text_area{
-        width: 100%;
-      }
+  h1 {
+    color: #131313;
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+  h2 {
+    color: #131313;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  p{
+    font-size: 14px;
+  }
+  .hero_area {
+    padding: 0 10px;
+  }
+  main {
+    padding: 0 10px;
+  }
+  nav,
+  .feature_container,
+  .experience_container {
+    flex-direction: column;
+  }
+  /* hero area  */
+  .hero_text {
+    padding-top: 20px;
+  }
+  /* feature area  */
+  .feature_images {
+    grid-template-columns: 1fr;
+  }
+  .feature_container {
+    padding: 0;
+  }
+  .feature_images {
+    width: 100%;
+  }
+  .feature_text_area {
+    width: 100%;
+  }
+  .experience_container{
+    margin: 30px 0;
+  }
+  .experience_text_area,
+  .experience_img {
+    width: 100%;
+  }
+  .experience_img img {
+    padding-left: 0px;
+  }
+  .ten_tear_badge {
+    width: 100%;
+    bottom: 0;
+  }
+  /* card area  */
+  .card {
+    margin-bottom: 20px;
+  }
+  .cards_conatiner {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    gap: 10px;
+  }
+  .card_text_area{
+    text-align: center;
+  }
+  .sponsore_img {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
-      .experience_text_area, .experience_img{
-        width: 100%;
-    }
-    .experience_img img{
-        padding-left: 0px;
-    }
-    .ten_tear_badge{
-        width: 100%;
-        bottom: 0;
-    }
-     /* card area  */
-     .card{
-      margin-bottom: 20px;
-     }
-     .cards_conatiner{
-      grid-template-columns: 1fr;
-     }
-     .sponsore_img{
-      grid-template-columns: 1fr;
-     }
+  .footer{
+    margin-bottom: 50px;
+  }
 }
 
 /* Responsive style for Tablet 768px  */
 @media screen and (min-width: 576px) and (max-width: 768px) {
-    .hero_area {
-        padding: 0 10px;
-      }
-      main{
-        padding: 0 10px ;
-      }
-      nav,
-      .feature_container,
-      .experience_container
-      {
-        flex-direction: column;
-      }
-      .hero_text{
-        padding-top: 30px;
-      }
-      /* feature area  */
-      .feature_images{
-        width: 100%;
-      }
-      .feature_text_area{
-        width: 100%;
-      }
-      
-      .experience_text_area, .experience_img{
-        width: 100%;
-    }
-    .cards_conatiner{
-      grid-template-columns: repeat(2, 1fr);
-     }
-     .sponsore_img{
-      grid-template-columns: repeat(2, 1fr);
-     }
+  .hero_area {
+    padding: 0 10px;
+  }
+  main {
+    padding: 0 10px;
+  }
+  nav,
+  .feature_container,
+  .experience_container {
+    flex-direction: column;
+  }
+  .hero_text {
+    padding-top: 30px;
+  }
+  /* feature area  */
+  .feature_images {
+    width: 100%;
+  }
+  .feature_text_area {
+    width: 100%;
+  }
+
+  .experience_text_area,
+  .experience_img {
+    width: 100%;
+  }
+  .cards_conatiner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sponsore_img {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .cards_conatiner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sponsore_img {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
